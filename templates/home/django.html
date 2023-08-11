@@ -1,0 +1,78 @@
+{% extends 'base2.html' %}
+{% block title %} Django Projects
+{% endblock title %}
+
+
+{% block djangoactive %}
+menu-active
+{% endblock djangoactive %}
+{% block body %}
+{% load static %}
+<section id="intro" style="background: url('static/img/bg/django.jpg') top center;width: 100%;height: 100vh;  
+  background-size: cover; overflow: hidden; position: relative;">
+    <div class="intro-container wow fadeIn">
+        <h1 class="mb-4 pb-0">My<br><span> Projects</span> </h1>
+        <p class="mb-4 pb-0">My all Django and Python Projects  with source code</p>
+        {% comment %} <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4"
+            data-vbtype="video" data-autoplay="true"></a> {% endcomment %}
+        <a href='#' class="about-btn scrollto">Scroll Down</a>
+    </div>
+</section>
+{% static 'img/djangoProjects' as baseurl %}
+<div class="container text-center my-4 myworksample px-0">
+    <h1 class="mb-5">My-Work</h1>
+    <p>I am learning some new things and trying to improve all my previous work  .
+        which are listed below you can visit each of my template just click on it and check it right now</p>
+</div>
+<div class="container">
+    <div class="row  mx-auto mt-2" id="mycards">
+        <!-- cards will appear hre by js -->
+        <div class="col col-lg-4 my-1 ">
+            <div class="card" style="width: 18rem;background-color:#6eff0085">
+                <img src="{{baseurl}}/face.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <h5 class="card-title">Smart Attendance System</h5>
+                    </a>
+                    <p class="card-text">"Smart attendance management with a Django-powered smart system. Utilizes Python's capabilities to automate attendance tracking, ensuring accuracy and reducing administrative effort. Seamlessly integrates user authentication, real-time updates, and data visualization, enhancing overall efficiency and convenience."
+                    <a href="https://github.com/Sksoyabakhtar/Smart_Attendance_System"
+                        class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-4 my-1">
+            <div class="card" style="width: 18rem;background-color:#6eff0085">
+                <img src="{{baseurl}}/emp.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <h5 class="card-title">Office Employee Management System</h5>
+                    </a>
+                    <p class="card-text">An efficient office employee management system developed using Python and Django framework, facilitating seamless employee data storage, retrieval, and administrative tasks, enhancing productivity and streamlining HR processes.
+                    </p>
+                    <a href="https://github.com/Sksoyabakhtar/Employee_Management_System"
+                        class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-lg-4 my-1">
+            <div class="card" style="width: 18rem;background-color:#6eff0085">
+                <img src="{{baseurl}}/dj.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <a href="#">
+                        <h5 class="card-title">My PortFolio</h5>
+                    </a>
+                    <p class="card-text">"Dynamic portfolio built with Django and Python, showcasing my skills and projects. Responsive design, interactive UI, and seamless navigation offer an engaging user experience. Backend powered by Django's robust framework ensures smooth functionality and data management."
+                    </p>
+                    <a href="#"
+                        class="btn btn-primary">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        
+
+       
+    </div>
+</div>
+
+{% endblock body %}
